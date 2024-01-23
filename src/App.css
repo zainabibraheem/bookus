@@ -198,7 +198,7 @@ height: 75vh;
 }
 
 .login-wrapper {
-  padding: 70px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +262,7 @@ height: 75vh;
 }
 
 .signup-container {
-max-width: 550px;
+width: 550px;
 background-color: rgb(250, 240, 150);
 padding: 30px;
 display: flex;

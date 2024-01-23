@@ -13,7 +13,7 @@ function Enquiry() {
 
   function handleChange(event) {
     const { name, value } = event.target
-    setFormData((prevFormData) => ( { ...prevFormData, [name]: value } ))
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }))
   }
 
   const handleSubmit = (event) => {
@@ -22,6 +22,13 @@ function Enquiry() {
 
   return (
     <div className='enquiry-wrapper'>
+
+      <div className='enquiry-text'>
+        <h2>Do you have a question?</h2>
+        <p>Learn more about our club</p>
+        <p>We'd love to help</p>
+      </div>
+
       <div className='form-container'>
         <form onSubmit={handleSubmit} className='enquiry-form'>
           <input
@@ -54,11 +61,6 @@ function Enquiry() {
         </form>
       </div>
 
-      <div className='enquiry-text'>
-        <h2>Do you have a question?</h2>
-        <p>Learn more about our club</p>
-        <p>We'd love to help</p>
-      </div>
 
     </div>
   )
